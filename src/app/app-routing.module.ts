@@ -8,12 +8,17 @@ import {ContactComponent} from './contact/contact.component';
 import {WelcomeComponent} from './welcome/welcome.component';
 import {LoginComponent} from './login/login.component';
 import {LearnPositionComponent} from './learn-position/learn-position.component';
+import {ChartComponent} from './chart/chart.component';
 
 
 const appRoutes: Routes = [
     {
         path: 'home',
         component: HomeComponent,
+    },
+    {
+        path: 'chart',
+        component: ChartComponent,
     },
     {
         path: 'welcome',
@@ -33,7 +38,7 @@ const appRoutes: Routes = [
     },
     {
         path: '',
-        redirectTo: '/home',
+        redirectTo: '/chart',
         pathMatch: 'full'
     },
     {path: '**', component: PageNotFoundComponent}

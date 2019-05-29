@@ -33,6 +33,7 @@ import {ChartModule} from 'primeng/chart';
 import {GalleriaModule} from 'primeng/galleria';
 import { LearnPositionComponent } from './learn-position/learn-position.component';
 import {PasswordModule} from 'primeng/password';
+import { ChartComponent } from './chart/chart.component';
 
 @NgModule({
     declarations: [
@@ -45,7 +46,8 @@ import {PasswordModule} from 'primeng/password';
         WelcomeComponent,
         ContactComponent,
         PageNotFoundComponent,
-        LearnPositionComponent
+        LearnPositionComponent,
+        ChartComponent
     ],
     imports: [
         BrowserModule,

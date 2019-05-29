@@ -16,7 +16,6 @@ export class PrimeCar implements Car {
     providers: [CarService]
 })
 export class AppComponent implements OnInit {
-    @ViewChild('login_view', {read: Element}) loginE: ElementRef;
 
     displayDialog: boolean;
 
@@ -120,10 +119,5 @@ export class AppComponent implements OnInit {
 
     findSelectedCarIndex(): number {
         return this.cars.indexOf(this.selectedCar);
-    }
-
-    showlogin(e) {
-        this.islogin = !this.islogin;
-        console.log(this.islogin);
     }
 }
