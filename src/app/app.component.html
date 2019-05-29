@@ -1,0 +1,21 @@
+<p-menubar [model]="items">
+    <input type="text" pInputText placeholder="Search">
+    <button pButton label="Logout" icon="fa fa-sign-out" (click)="showlogin($event)"></button>
+</p-menubar>
+
+<div class="layout-wrapper">
+    <div class="login-wraps" #login_view *ngIf="islogin">
+        <div>
+            <div class="ui-inputgroup">
+                <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
+                <input type="text" pInputText placeholder="Username">
+            </div>
+            <div class="ui-inputgroup">
+                <span class="ui-inputgroup-addon"><i class="fa fa-key"></i></span>
+                <input type="password" pPassword placeholder="PassWord"/>
+            </div>
+        </div>
+    </div>
+    <router-outlet></router-outlet>
+</div>
+<app-footer></app-footer>
